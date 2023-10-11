@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="613.0" prefWidth="709.0" style="-fx-background-color: #434343;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.task12_lavr.HelloController">
+   <children>
+      <Spinner fx:id="spinner_moves" layoutX="251.0" layoutY="45.0" prefHeight="25.0" prefWidth="106.0" />
+      <Label layoutX="251.0" layoutY="22.0" text="Move" textFill="WHITE">
+         <font>
+            <Font name="Verdana" size="18.0" />
+         </font>
+      </Label>
+      <Spinner fx:id="spinner_x" layoutX="14.0" layoutY="45.0" prefHeight="25.0" prefWidth="106.0" />
+      <Label layoutX="130.0" layoutY="22.0" text="X number" textFill="WHITE">
+         <font>
+            <Font name="Verdana" size="18.0" />
+         </font>
+      </Label>
+      <Spinner fx:id="spinner_y" layoutX="130.0" layoutY="45.0" prefHeight="25.0" prefWidth="106.0" />
+      <Label layoutX="14.0" layoutY="22.0" text="Y number" textFill="WHITE">
+         <font>
+            <Font name="Verdana" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="button_show" layoutX="131.0" layoutY="87.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="106.0" text="Show">
+         <font>
+            <Font name="Verdana" size="18.0" />
+         </font></Button>
+      <Label layoutX="532.0" layoutY="9.0" text="Task 12" textFill="WHITE">
+         <font>
+            <Font name="Verdana" size="39.0" />
+         </font>
+      </Label>
+      <TabPane layoutX="26.0" layoutY="129.0" prefHeight="445.0" prefWidth="662.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Chess board">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="655.0">
+                     <children>
+                        <AnchorPane fx:id="pane_chess" layoutX="132.0" layoutY="29.0" prefHeight="7.0" prefWidth="5.0" style="-fx-background-color: grey;" />
+                        <TextField fx:id="textField_Coordinate" layoutX="43.0" layoutY="59.0" prefHeight="28.0" prefWidth="56.0">
+                           <font>
+                              <Font name="Verdana" size="14.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="textField_Original" layoutX="44.0" layoutY="125.0" prefHeight="28.0" prefWidth="55.0">
+                           <font>
+                              <Font name="Verdana" size="14.0" />
+                           </font>
+                        </TextField>
+                        <Label layoutX="44.0" layoutY="25.0" text="Coord" textFill="WHITE">
+                           <font>
+                              <Font name="Verdana" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="36.0" layoutY="95.0" text="Original" textFill="WHITE">
+                           <font>
+                              <Font name="Verdana" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Text">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <AnchorPane fx:id="tr" layoutX="28.0" layoutY="16.0" prefHeight="388.0" prefWidth="611.0">
+                           <children>
+                              <TextArea fx:id="area_chess" layoutX="72.0" layoutY="14.0" prefHeight="367.0" prefWidth="462.0" />
+                           </children></AnchorPane>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+      <Button fx:id="button_clear" layoutX="261.0" layoutY="87.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="97.0" text="Refresh">
+         <font>
+            <Font name="Verdana" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
